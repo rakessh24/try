@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>Dino</h2>
+    <h3>Score: <span id="score">0</h3>
+    <div id="board">
+        <div id="area">
+            <div id="dino"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function setBackgroundMoving(){
+            setTimeout(function){
+                var bg = document.getElementById('board');
+                bg.style.backgroundPosition = (parseInt(bg.style.backgroundPosition.
+                replace('px','')-1)) + 'px'
+            }
+        }
+    </script>
+</body>
+</html>
